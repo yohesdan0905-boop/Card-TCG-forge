@@ -174,7 +174,24 @@
             body { padding: 10px; }
             #card-canvas { transform: scale(0.9); margin-bottom: 10px; }
         }
+        
     </style>
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="icon.png.jpg">
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('Service Worker registrado', reg))
+          .catch(err => console.error('Error al registrar SW', err));
+      });
+    }
+  </script>
+    
 </head>
 <body>
 
