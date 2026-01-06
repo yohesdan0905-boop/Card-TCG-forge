@@ -1,6 +1,6 @@
 {
-  "name": "TCG Forge",
-  "short_name": "TCG Forge",
+  "name": "Card TCG Forge",
+  "short_name": "Card TCG Forge",
   "description": "Creador de cartas TCG",
   "start_url": "index.html",
   "display": "standalone",
